@@ -1,0 +1,70 @@
+object MyLoginForm: TMyLoginForm
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 251
+  ClientWidth = 413
+  Fill.Color = xFF6ABAD3
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 79.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Username'
+    TabOrder = 2
+  end
+  object UserNameEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 200.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 79.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Password'
+    TabOrder = 0
+  end
+  object PasswordEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 200.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    OnValidating = PasswordEditValidating
+  end
+  object LogInButton: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Log in'
+    OnClick = LogInButtonClick
+  end
+  object MessageLabel: TLabel
+    Position.X = 39.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 146.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+end
